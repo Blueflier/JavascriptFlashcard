@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flash Card Game</title>
+  <style>
+  /* Basic styling for the game */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center; /* Center align the content */
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the items horizontally */
+}
+
+#question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.flashcard {
+  width: 200px;
+  height: 120px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.flashcard:hover {
+  background-color: lightgray;
+}
+
+.clicked {
+  background-color: blue !important;
+}
+
+  </style>
+</head>
+<body>
+  <div id="question">What is 2 + 2?</div>
+  <div class="flashcard" id="flashcard1"></div>
+  <div class="flashcard" id="flashcard2"></div>
+  <div id="result"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
